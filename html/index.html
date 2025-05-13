@@ -4,95 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolas | Portfólio</title>
+    <title>Nicolas Fukunaga | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav class="Navegação">
+        <nav>
             <ul>
-                <li>
-                    <a href="#Início">Início</a>
-                </li>
-                <br>
-                <li>
-                    <a href="#Sobre">Sobre</a>
-                </li>
-                <br>
-                <li>
-                    <a href="#Projetos">Projetos</a>
-                </li>
-                <br>
-                <li>
-                    <a href="#Contato">Contato</a>
-                </li>
-                <br>
+                <li><a href="#Início">Início</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Projetos">Projetos</a></li>
+                <li><a href="#Contato">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main id="#Início" class="cabecalho">
 
-        <img src="">
-        <h1>Nicolas Fukunaga</h1>
-        <h2>Desenvolvedor Front - end</h2>
-        <img src="/assets/Foto de Perfil - Copia.jfif" alt="Foto de Perfil" width="250px">
+    <main>
+        <!-- Seção Início -->
+        <section id="Início">
+            <h1>Nicolas Fukunaga</h1>
+            <h2>Desenvolvedor Front-End</h2>
+            <img src="/assets/Foto de Perfil - Copia.jfif" alt="Foto de Perfil" width="250px">
+        </section>
 
-
-        <br><br>
-
-
-        <section id="SobreMim">
-
-            <h2>Sobre mim </h2>
+        <!-- Seção Sobre -->
+        <section id="Sobre">
+            <h2>Sobre Mim</h2>
             <p>
-                Sou desenvolvedor front-end focado em criar interfaces modernas,
-                funcionais e responsivas. <br>
-                Estou no ensino superior, cursando Análise e Desenvolvimento de sistemas. 
-                Trabalho com HTML, CSS, JavaScript e frameworks como React e Vue.js. <br>
-                Valorizo a experiência do usuário, acessibilidade e performance. <br>
-                Busco sempre aprender novas tecnologias e aprimorar minhas habilidades. <br>
-                Gosto de colaborar em projetos desafiadores e que tenham impacto real.
+                Sou desenvolvedor front-end focado em criar interfaces modernas, funcionais e responsivas.<br>
+                Atualmente estou cursando Análise e Desenvolvimento de Sistemas. (Terceiro Semestre)<br>
+                Trabalho com HTML, CSS, JavaScript, além de frameworks como React e Vue.js.<br>
+                Valorizo a experiência do usuário, acessibilidade e performance.<br>
+                Sempre busco aprender novas tecnologias e melhorar minhas habilidades.<br>
+                Gosto de trabalhar em projetos desafiadores e com impacto real.
             </p>
         </section>
-        </ul>
-        <br><br><br>
-        <h2>Habilidades </h2>
-        <ul>
-            <h3>Linguagens</h3>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-        <br><br>
-        <h3>Tecnologias</h3>
-        <ol>
-            <li>Excel (avançado)</li>
-            <li>Node</li>
-            <li>Express JS</li>
-            <li>Vite</li>
-        </ol>
-        <br><br><br>
+
+        <!-- Seção Habilidades -->
+        <section>
+            <h2>Habilidades</h2>
+            <div>
+                <h4>Linguagens</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Tecnologias</h4>
+                <ol>
+                    <li>Excel (avançado)</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>Vite</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
         <section id="Projetos">
             <h2>Projetos</h2>
-            <a href="https://github.com/NicolasFukunaga/AulasIOS/tree/main
-        ">Projetos</a>
-            <br><br>
-
-            <img src="/assets/Capturar.PNG" alt="" width="500px">
-
+            <a href="https://github.com/NicolasFukunaga/AulasIOS/tree/main">Ver Projetos</a>
+            <img src="/assets/Capturar.PNG" id="Projetinho" alt="Screenshot de Projetos" width="500px">
         </section>
-        <br><br><br>
 
+        <!-- Seção Contato -->
         <section id="Contato">
             <h3>Contato</h3>
-            <p>GitHub:</p> <a href="https://github.com/NicolasFukunaga" target="_blank">github</a>
-            <br><br>
-            <p>linkedin:</p> <a
-                href="https://www.linkedin.com/in/nicolas-fukunaga-1131152b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                target="_blank">LinkedIn</a>
-            <a href=""></a>
-            <p>E-mail: <br> fukunaganicolas@outlook.com</p>
-            <p>Telefone: <br> (11) 99118-9499</p>
+            <div>
+                <a href="https://github.com/NicolasFukunaga" target="_blank">
+                    <img src="/assets/images.png" alt="GitHub" width="50px">
+                </a>
+                <a href="https://www.linkedin.com/in/nicolas-fukunaga-1131152b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                    <img src="/assets/linkedin.png" alt="LinkedIn" width="60px">
+                </a>
+            </div>
+            <p>Email: fukunaganicolas@outlook.com</p>
+            <p>Telefone: (11) 99118-9499</p>
         </section>
     </main>
 </body>

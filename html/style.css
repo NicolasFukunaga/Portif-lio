@@ -1,19 +1,181 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-body{
-    text-align: center;
-    background-color: rgb(150, 147, 147);
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
 }
-h1{
-    color: white;
-    background-color: black;
+
+/* Estilização do cabeçalho */
+header {
+    background: #333;
+    padding: 1rem;
 }
-footer{
-    background-color: black;
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    background-color: #fff;
+}
+
+nav ul li a {
+    color: 121212;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+/* Seção principal */
+main {
+    max-width: 900px;
+    margin: 20px auto;
     padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+    color: #222;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+/* Imagens */
+img {
+    border-radius: 10px;
+}
+
+/* Habilidades */
+section div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+section div h4 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+ul li,
+ol li {
+    background: #e3ebff;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+#Projetos {
+    
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 30px;
+    padding: 50px;
+}
+
+/* Projetos */
+#Projetos a {
+    display: block;
+    background-color: #121212;
     color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    width: 20%;
+    gap: 19px;
+    
+
+    margin-right: 10px;
+    /* Adiciona um espaço à direita do botão */
+}
+#Projetinho {
+    padding-top: 20px;
+    margin-top: 20px;
+    display: hidden;
+}
+
+#Projetos a:hover {
+    background: #ffcc00;
+    color: #333;
+}
+
+/* Contato */
+#Contato div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+#Contato a img {
+    transition: transform 0.3s ease;
+}
+
+#Contato a:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    section div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 15px;
+    }
 }
