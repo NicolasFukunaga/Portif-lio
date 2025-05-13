@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<center>
+<body>
+    <h1>Formulário TOTVS</h1>
+<br><br>
+<!-- mailto é uma ação de formulário que envia os dados como e-mail
+method define qual será o tipo utilizado pelo formulário -->
+    <form action="mailto:rochalirathiago@outlook.com" method="post">
+
+        <label for="Nome Completo">Nome Completo: </label>
+        <input type="text"  required minlength="3" maxlength="50" id="Nome Completo" name="NomeCompleto">
+        <br><br>
+        <label for="CPF">CPF:</label>
+        <input type="text" required minlength="11" maxlength="11" id="CPF" name="CPF">
+        <br><br>
+        <label for="RG">RG:</label>
+        <input type="text" required minlength="6" maxlength="27" id="RG" name="RG">
+
+        <br><br>
+        <p>De que estado você virá?</p>
+
+        <input type="radio" required name="Estado" id="SP">
+        <label for="SP">SP:</label>
+        <br>
+        <input type="radio" required id="RG" name="Estado">
+        <label for="MG">MG:</label>
+        <br>
+        <input type="radio" required id="RJ" name="Estado">
+        <label for="RJ">RJ:</label>
+        <br>
+
+        <p>Método de transporte:</p>
+        <label for="Busão">Ônibus</label>
+        <input type="checkbox" name="Transporte" id="Busão" value="Ônibus">
+        <br>
+        <label for="metro">Metrô</label>
+        <input type="checkbox" name="Tramsporte" id="metro" value="Metrô">
+        <br>
+        <label for="Trem">Trem</label>
+        <input type="checkbox" name="Transporte" id="Trem" value="Trem">
+        <br>
+        <label for="Carro">Carro</label>
+        <input type="checkbox" name="Transporte" id="Carro" value="Carro">
+        <br>
+        <label for="Bicicleta">Bicicleta</label>
+        <input type="checkbox" name="Transporte" id="Bicicleta" value="Bicicleta">
+        <br><br><br>
+        <!-- Input é um campo onde o usuário pode enviar varios campos de dados
+        type determina o tipo de dado que será utilizado naquele input -->
+        <input type="submit" value="Enviar!">
+        
+        
+    </form>
+
+</body>
+</center>
+</html>
